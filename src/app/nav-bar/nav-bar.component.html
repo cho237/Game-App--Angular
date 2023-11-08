@@ -1,0 +1,102 @@
+<nav class="fixed w-full bg-transparent">
+  <div class="px-6 sm:px-16 xl:px-40 2xl:px-60">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+        <!-- Mobile menu button-->
+        <div class="text-white">
+          <svg
+            class="block h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+      >
+        <div class="hidden md:flex flex-shrink-0 items-center">
+          <img
+            class="h-8 w-auto"
+            src="../../assets/images/CDev.svg"
+            alt="Your Company"
+          />
+        </div>
+        <div class="hidden sm:ml-6 md:block">
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden md:flex  absolute inset-y-0 right-0  items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+      >
+    
+        <a
+          href="#"
+          class="nav_link"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="nav_link"
+          >About us</a
+        >
+        <a
+          href="#"
+          class="nav_link"
+          >Portfolio</a
+        >
+        <a
+          href="#"
+          class="nav_link"
+          >News</a
+        >
+        <a
+          href="#"
+          class="bg-[#FA9021] text-white rounded-md px-3 md:px-6 xl:px-12 py-2 text-sm font-medium"
+          aria-current="page"
+          >Dashboard</a
+        >
+
+        <!-- Profile dropdown -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="md:hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a
+        href="#"
+        class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+        aria-current="page"
+        >Dashboard</a
+      >
+      <a
+        href="#"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        >Team</a
+      >
+      <a
+        href="#"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        >Projects</a
+      >
+      <a
+        href="#"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        >Calendar</a
+      >
+    </div>
+  </div>
+</nav>

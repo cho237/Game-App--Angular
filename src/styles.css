@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg_clolor{
+    background-color: #000000;
+}
+
+.general_padding{
+    @apply px-6 sm:px-20 xl:px-60 2xl:px-80
+}
+.orangeColor{
+    color: #FA9021;
+}
+
+/* .padding{
+    @apply 
+} */
