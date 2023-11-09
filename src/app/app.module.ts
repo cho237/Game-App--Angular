@@ -8,6 +8,8 @@ import { HeadComponent } from './home/head/head.component';
 import { TrendingGamesComponent } from './home/trending-games/trending-games.component';
 import { BestGameComponent } from './home/best-game/best-game.component';
 import { HomeComponent } from './home/home.component';
+import { GameDevelopmentComponent } from './home/game-development/game-development.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     HeadComponent,
     TrendingGamesComponent,
     BestGameComponent,
-    HomeComponent
+    HomeComponent,
+    GameDevelopmentComponent,
   ],
   imports: [
     BrowserModule,
