@@ -10,6 +10,7 @@ import { BestGameComponent } from './home/best-game/best-game.component';
 import { HomeComponent } from './home/home.component';
 import { GameDevelopmentComponent } from './home/game-development/game-development.component';
 import { RecentProjectsComponent } from './home/recent-projects/recent-projects.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { RecentProjectsComponent } from './home/recent-projects/recent-projects.
     HomeComponent,
     GameDevelopmentComponent,
     RecentProjectsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
