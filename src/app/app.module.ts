@@ -9,6 +9,7 @@ import { TrendingGamesComponent } from './home/trending-games/trending-games.com
 import { BestGameComponent } from './home/best-game/best-game.component';
 import { HomeComponent } from './home/home.component';
 import { GameDevelopmentComponent } from './home/game-development/game-development.component';
+import { RecentProjectsComponent } from './home/recent-projects/recent-projects.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { GameDevelopmentComponent } from './home/game-development/game-developme
     BestGameComponent,
     HomeComponent,
     GameDevelopmentComponent,
+    RecentProjectsComponent,
   ],
   imports: [
     BrowserModule,
