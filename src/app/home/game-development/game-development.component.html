@@ -1,9 +1,9 @@
 <div class="game_dev general_padding bg_clolor">
-  <div class="flex justify-center pb-10">
+  <div class="flex sm:justify-center pb-10">
     <p
-      class="text-white lg:w-2/4 text-center text-xl md:text-2xl lg:text-3xl font-bold"
+      class="text-white md:w-2/4 sm:text-center text-xl md:text-2xl lg:text-3xl font-bold"
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry 2.
     </p>
   </div>
 
@@ -18,7 +18,7 @@
   <div class="pt-10 flex flex-wrap justify-center gap-10 lg:gap-20">
     <!-- start -->
     <div class="flex flex-col" *ngFor="let item of elements">
-      <img [src]="'../../../assets/images/' + item.img" class="h-24" alt="" />
+      <img [src]="'../../../assets/images/' + item.img" class="h-20 sm:h-24" alt="" />
       <p class="text-white my-3 w-60 text-center">{{ item.title }}</p>
       <div class="flex justify-center">
         <svg
