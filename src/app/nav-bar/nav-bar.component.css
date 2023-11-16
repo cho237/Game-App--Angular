@@ -1,7 +1,7 @@
 .nav_link{
-    @apply text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 md:px-6 xl:px-12 py-2 text-sm font-medium
+    @apply text-gray-300 hover:border-b-2 hover:border-b-[#FA9021] rounded-md px-3 md:px-6 xl:px-12 py-2 text-sm font-medium cursor-pointer
 }
 .nav_link_res{
-    @apply text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium
+    @apply text-gray-300 hover:border-b-2 hover:border-b-[#FA9021] block rounded-md px-3 py-2 text-base font-medium
 }
 

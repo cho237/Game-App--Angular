@@ -11,6 +11,9 @@ import { HomeComponent } from './home/home.component';
 import { GameDevelopmentComponent } from './home/game-development/game-development.component';
 import { RecentProjectsComponent } from './home/recent-projects/recent-projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { HeaderComponent } from './about-us/header/header.component';
+import { WorkComponent } from './about-us/work/work.component';
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { FooterComponent } from './footer/footer.component';
     GameDevelopmentComponent,
     RecentProjectsComponent,
     FooterComponent,
+    AboutUsComponent,
+    HeaderComponent,
+    WorkComponent,
   ],
   imports: [
     BrowserModule,

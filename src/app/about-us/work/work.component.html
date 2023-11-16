@@ -1,0 +1,51 @@
+
+<div class="bg_clolor lg:h-screen text-white flex  flex-col gap-10">
+  <div class="general_padding  ">
+    <p class="text-lg font-bold md:text-xl lg:text-2xl py-10">
+      Why work with us
+    </p>
+    <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+      <div class="" *ngFor="let item of cardItems">
+        <div class="py-10 px-10 xl:py-14 xl:px-14 bg-[#1C140F] rounded-lg">
+          <div class="flex flex-col gap-5">
+            <div class="">
+              <a
+                href="#"
+                [style.background]="item.btnColor + '1A'"
+                class="bg-opacity-20 text-white rounded-md px-3 md:px-6 py-2 text-sm lg:text-base font-medium opacity-100"
+                aria-current="page"
+                >{{ item.btnText }}</a
+              >
+            </div>
+            <p class="text-lg lg:text-xl font-bold">{{ item.p1 }}</p>
+            <p class="text-sm lg:text-base">
+              {{ item.p2 }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div  class="w-full bg-[#1c140f]  flex flex-col md:flex-row gap-8 general_padding">
+    <div class="w-full pt-8">
+        <div class="work_right h-64 md:h-96"></div>
+    </div>
+    <div class="w-full flex flex-col gap-y-4 ">
+       
+          <p class="text-lg lg:text-xl">Lorem ipsum</p>
+          <p class="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl w-3/4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <p class="text-sm lg:text-base">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries,
+          </p>
+  
+    </div>
+  </div>
+</div>
