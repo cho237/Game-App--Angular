@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA,NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -15,7 +14,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { HeaderComponent } from './about-us/header/header.component';
 import { WorkComponent } from './about-us/work/work.component';
 import { TeamComponent } from './about-us/team/team.component';
-
+import { register } from 'swiper/element/bundle';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+// register Swiper custom elements
+register();
 
 @NgModule({
   declarations: [
@@ -32,12 +34,14 @@ import { TeamComponent } from './about-us/team/team.component';
     HeaderComponent,
     WorkComponent,
     TeamComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
