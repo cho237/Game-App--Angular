@@ -19,7 +19,9 @@
 .orangeColor {
   color: #FA9021;
 }
-
+.active-link{
+  @apply border-b-2 border-b-[#FA9021]
+}
 /* .padding{
     @apply 
 } */

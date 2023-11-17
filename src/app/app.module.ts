@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HeaderComponent } from './about-us/header/header.component';
 import { WorkComponent } from './about-us/work/work.component';
+import { TeamComponent } from './about-us/team/team.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { WorkComponent } from './about-us/work/work.component';
     AboutUsComponent,
     HeaderComponent,
     WorkComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,

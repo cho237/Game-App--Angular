@@ -1,16 +1,15 @@
-<nav class="fixed z-[999] w-full" [ngClass]="{'bg_clolor': scroll}">
+<nav class="fixed z-[999] w-full" [ngClass]="{ bg_clolor: scroll }">
   <div class="px-6 sm:px-16 xl:px-40 2xl:px-60">
     <div class="relative flex h-16 items-center justify-between">
-     
-
-      <div class="absolute inset-y-0 left-0 flex justify-between w-full  items-center md:hidden">
+      <div
+        class="absolute inset-y-0 left-0 flex justify-between w-full items-center md:hidden"
+      >
         <div class="">
-
           <img
-          class=" md:hidden  h-9 font-bold w-auto "
-          src="../../assets/images/CDev.svg"
-          alt="Your Company"
-        />
+            class="md:hidden h-9 font-bold w-auto"
+            src="../../assets/images/CDev.svg"
+            alt="Your Company"
+          />
         </div>
         <!-- Mobile menu button-->
         <div class="text-white cursor-pointer" (click)="onMenuButton()">
@@ -47,31 +46,27 @@
         </div>
       </div>
       <div
-        class="hidden md:flex  absolute inset-y-0 right-0  items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+        class="hidden md:flex absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
       >
-    
-      
         <a
           routerLink="/"
           class="nav_link"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
           >Home</a
         >
         <a
+          routerLinkActive="active-link"
           routerLink="/about-us"
           class="nav_link"
           >About us</a
         >
-        <a
-          href="#"
-          class="nav_link"
+        <a routerLinkActive="active-link" href="#" class="nav_link"
           >Portfolio</a
         >
+        <a routerLinkActive="active-link" href="#" class="nav_link">News</a>
         <a
-          href="#"
-          class="nav_link"
-          >News</a
-        >
-        <a
+          routerLinkActive="active-link"
           href="#"
           class="bg-[#FA9021] text-white rounded-md px-3 md:px-6 xl:px-12 py-2 text-sm font-medium ml-5"
           aria-current="page"
@@ -85,23 +80,25 @@
 
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="md:hidden" *ngIf="openMenu" id="mobile-menu">
-    <div class="space-y-1 px-6 sm:px-20  pb-3 pt-2 bg_clolor">
+    <div class="space-y-1 px-6 sm:px-20 pb-3 pt-2 bg_clolor">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <a
+        routerLink="/"
+        class="nav_link"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
         href="#"
         class="nav_link_res"
-        >Team</a
+        >Home</a
       >
       <a
+        routerLinkActive="active-link"
+        routerLink="/about-us"
         href="#"
         class="nav_link_res"
-        >Projects</a
+        >About us</a
       >
-      <a
-        href="#"
-        class="nav_link_res"
-        >Calendar</a
-      >
+      <a href="#" class="nav_link_res">Calendar</a>
     </div>
   </div>
 </nav>
