@@ -61,7 +61,10 @@
           class="nav_link"
           >About us</a
         >
-        <a routerLinkActive="active-link" href="#" class="nav_link"
+        <a 
+        routerLinkActive="active-link" 
+        routerLink="/portfolio"
+         class="nav_link"
           >Portfolio</a
         >
         <a routerLinkActive="active-link" href="#" class="nav_link">News</a>
@@ -87,18 +90,22 @@
         class="nav_link"
         routerLinkActive="active-link"
         [routerLinkActiveOptions]="{ exact: true }"
-        href="#"
         class="nav_link_res"
         >Home</a
       >
       <a
         routerLinkActive="active-link"
         routerLink="/about-us"
-        href="#"
         class="nav_link_res"
         >About us</a
       >
-      <a href="#" class="nav_link_res">Calendar</a>
+      <a
+        routerLinkActive="active-link"
+        routerLink="/portfolio"
+        class="nav_link_res"
+        >Portfolio</a
+      >
+     
     </div>
   </div>
 </nav>

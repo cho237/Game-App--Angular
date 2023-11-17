@@ -16,6 +16,8 @@ import { WorkComponent } from './about-us/work/work.component';
 import { TeamComponent } from './about-us/team/team.component';
 import { register } from 'swiper/element/bundle';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PHeadComponent } from './portfolio/p-head/p-head.component';
+import { ArticlesComponent } from './portfolio/articles/articles.component';
 // register Swiper custom elements
 register();
 
@@ -35,6 +37,8 @@ register();
     WorkComponent,
     TeamComponent,
     PortfolioComponent,
+    PHeadComponent,
+    ArticlesComponent,
   ],
   imports: [
     BrowserModule,
