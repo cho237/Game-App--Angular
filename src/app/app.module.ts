@@ -18,6 +18,7 @@ import { register } from 'swiper/element/bundle';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PHeadComponent } from './portfolio/p-head/p-head.component';
 import { ArticlesComponent } from './portfolio/articles/articles.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 // register Swiper custom elements
 register();
 
@@ -42,7 +43,8 @@ register();
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

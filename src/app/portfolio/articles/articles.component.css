@@ -1,5 +1,6 @@
 .articles_left{
     background-image: url('../../../assets/images/Video.svg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
+

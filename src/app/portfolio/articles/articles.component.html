@@ -1,33 +1,119 @@
-<div class="">
-  <div class="flex flex-col lg:flex-row">
-    <div class="w-full articles_left h-64 md:h-96 rounded-lg">
+<div class="flex flex-col gap-4 md:gap-32 ">
+  <div class="grid md:grid-cols-2">
+    <div class="w-full">
+      <img
+        src="../../../assets/images/Video.svg"
+        class="h-full object-cover rounded-xl"
+        alt=""
+      />
     </div>
-    <div class="w-full flex flex-col gap-3 md:pl-10">
+    <div class="w-full flex flex-col justify-between gap-2 md:pl-10">
       <p class="font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl w-3/4">
         Lorem Ipsum is simply dummy text
       </p>
-      <p class=" w-[90%]">
+      <p class="w-[90%]">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.Lorem Ipsum is simply dummy
       </p>
-      <div class="flex flex-col gap-2 text-sm lg:text-base">
-          <div class="flex gap-2">
-            <img src="../../../assets/images/check-circle.svg" alt="">
-            <p>Lorem Ipsum is simply</p>
-          </div>
-          <div class="flex gap-2">
-            <img src="../../../assets/images/check-circle.svg" alt="">
-            <p>Lorem Ipsum is simply</p>
-          </div>
-          <div class="flex gap-2">
-            <img src="../../../assets/images/check-circle.svg" alt="">
-            <p>Lorem Ipsum is simply</p>
-          </div>
-          <div class="flex gap-2">
-            <img src="../../../assets/images/check-circle.svg" alt="">
-            <p>Lorem Ipsum is simply</p>
-          </div>
+
+      <div class="flex gap-2">
+        <img src="../../../assets/images/check-circle.svg" alt="" />
+        <p>Lorem Ipsum is simply</p>
+      </div>
+      <div class="flex gap-2">
+        <img src="../../../assets/images/check-circle.svg" alt="" />
+        <p>Lorem Ipsum is simply</p>
+      </div>
+      <div class="flex gap-2">
+        <img src="../../../assets/images/check-circle.svg" alt="" />
+        <p>Lorem Ipsum is simply</p>
+      </div>
+      <div class="flex gap-2">
+        <img src="../../../assets/images/check-circle.svg" alt="" />
+        <p>Lorem Ipsum is simply</p>
       </div>
     </div>
+  </div>
+  <div class="flex flex-col gap-4" *ngFor="let article of articles; index as i">
+    <div
+      class="flex flex-col gap-5"
+      [ngClass]="i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'"
+    >
+      <div
+        [ngClass]="i % 2 === 0 ? 'lg:pr-32' : ''"
+        class="w-full flex flex-col justify-between gap-4"
+      >
+        <p class="font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">
+          {{ article.title }}
+        </p>
+        <p class="">
+          {{ article.p1 }}
+        </p>
+        <p class="">
+          {{ article.p2 }}
+        </p>
+        <a
+          routerLinkActive="active-link"
+          href="#"
+          class="bg-[#FA9021] px-6 xl:px-10 py-2 text-sm text-center font-medium w-36 lg:w-44 lg:text-base"
+          aria-current="page"
+          >Read more</a
+        >
+      </div>
+      <div class="w-full" [ngClass]="i % 2 !== 0 ? 'lg:pr-32' : ''">
+        <img
+          [src]="'../../../assets/images/' + article.image"
+          class="object-cover h-60 w-full md:h-full xl:h-[26rem]"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-8">
+
+    <p class="font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl w-2/4">
+      Trusted by Thousands of Happy Customer
+    </p>
+
+    <p class="w-[90%] pb-8">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy .
+    </p>
+
+    <swiper-container
+      class="mySwiper"
+      pagination="true"
+      pagination-clickable="true"
+     [slidesPerView] = slidesPerView
+      space-between="30"
+      free-mode="true"
+      navigation = 'true'
+    >
+    
+      <swiper-slide *ngFor="let item of slides">
+        <div class="w-full border-2 rounded-lg py-8 px-8 mb-2">
+          <div class="flex gap-2">
+            <img src="../../../assets/images/u.svg" class="h-10 w-10 lg:h-14 lg:w-14" alt="" />
+            <div class="w-full flex justify-between">
+              <div class="flex flex-col justify-center">
+                <p class="text-sm ">Viezh Robert</p>
+                <p class="text-xs ">Warsaw, Poland</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <p>4.5</p>
+                <img
+                  src="../../../assets/images/star.svg"
+                  class="h-6 w-6 "
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <p class="text-base lg:text-lg text-left pt-5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          </p>
+        </div>
+      </swiper-slide>
+  
+    </swiper-container>
   </div>
 </div>
