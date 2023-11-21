@@ -1,23 +1,20 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
   styleUrls: ['./articles.component.css'],
 })
-export class ArticlesComponent {
+export class ArticlesComponent implements OnInit{
+
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.slidesPerView = 1
     this.innerWidth = window.innerWidth;
-    if(this.innerWidth > 640){
-      this.slidesPerView = 2
-    } 
-    if(this.innerWidth > 925){
-      this.slidesPerView = 3
-    }
-    console.log(this.slidesPerView)
+    this.setSlidesPerView(this.innerWidth)
   }
+
+
   slidesPerView: number = 3;
   public innerWidth: any;
   articles: any = [
@@ -39,6 +36,22 @@ export class ArticlesComponent {
       p2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
       image: 'head-img.svg',
     },
+   
+    
   ];
   slides:any = [1,2,3]
+
+  ngOnInit(): void {
+    this.slidesPerView = 1
+    this.setSlidesPerView(window.innerWidth);
+  }
+
+  setSlidesPerView(width:number){
+    if(width > 640){
+      this.slidesPerView = 2
+    } 
+    if(width > 925){
+      this.slidesPerView = 3
+    }
+  }
 }

@@ -18,6 +18,9 @@ import { register } from 'swiper/element/bundle';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PHeadComponent } from './portfolio/p-head/p-head.component';
 import { ArticlesComponent } from './portfolio/articles/articles.component';
+import { NewsComponent } from './news/news.component';
+import { NHeadComponent } from './news/n-head/n-head.component';
+import { DetailsComponent } from './news/details/details.component';
 // register Swiper custom elements
 register();
 
@@ -39,6 +42,9 @@ register();
     PortfolioComponent,
     PHeadComponent,
     ArticlesComponent,
+    NewsComponent,
+    NHeadComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
