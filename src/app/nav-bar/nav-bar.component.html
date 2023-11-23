@@ -1,4 +1,4 @@
-<nav class="fixed z-[999] w-full" [ngClass]="{ bg_clolor: scroll }">
+<nav class="fixed z-[999] w-full" [ngClass]="{ bg_color: scroll }">
   <div class="px-6 sm:px-16 xl:px-40 2xl:px-60">
     <div class="relative flex h-16 items-center justify-between">
       <div
@@ -61,22 +61,22 @@
           class="nav_link"
           >About us</a
         >
-        <a 
-        routerLinkActive="active-link" 
+        <a
+        routerLinkActive="active-link"
         routerLink="/portfolio"
          class="nav_link"
           >Portfolio</a
         >
-        <a 
-        routerLinkActive="active-link" 
+        <a
+        routerLinkActive="active-link"
         routerLink="/news"
          class="nav_link"
           >News</a
         >
-       
+
         <a
           routerLinkActive="active-link"
-          href="#"
+          routerLink="/contact-us"
           class="bg-[#FA9021] text-white rounded-md px-3 md:px-6 xl:px-12 py-2 text-sm font-medium ml-5"
           aria-current="page"
           >Contact us</a
@@ -89,7 +89,7 @@
 
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="md:hidden" *ngIf="openMenu" id="mobile-menu">
-    <div class="space-y-1 px-6 sm:px-20 pb-3 pt-2 bg_clolor">
+    <div class="space-y-1 px-6 sm:px-20 pb-3 pt-2 bg_color">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <a
         routerLink="/"
@@ -117,7 +117,13 @@
         class="nav_link_res"
         >News</a
       >
-     
+      <a
+        routerLinkActive="active-link"
+        routerLink="/contact-us"
+        class="nav_link_res"
+        >Contact Us</a
+      >
+
     </div>
   </div>
 </nav>

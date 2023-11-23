@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.bg_clolor {
+.bg_color {
   background-color: #000000;
 }
 
@@ -23,7 +23,7 @@
   @apply border-b-2 border-b-[#FA9021]
 }
 /* .padding{
-    @apply 
+    @apply
 } */
 swiper-container {
   width: 100%;
@@ -37,7 +37,7 @@ swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 swiper-slide img {

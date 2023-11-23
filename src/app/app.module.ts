@@ -21,6 +21,7 @@ import { ArticlesComponent } from './portfolio/articles/articles.component';
 import { NewsComponent } from './news/news.component';
 import { NHeadComponent } from './news/n-head/n-head.component';
 import { DetailsComponent } from './news/details/details.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 // register Swiper custom elements
 register();
 
@@ -45,6 +46,7 @@ register();
     NewsComponent,
     NHeadComponent,
     DetailsComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
